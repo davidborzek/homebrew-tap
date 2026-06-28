@@ -1,35 +1,36 @@
 class RingoFlow < Formula
   desc "Declarative telephony scenario test runner for baresip"
   homepage "https://github.com/davidborzek/ringo"
-  version "0.10.1"
+  version "0.11.0"
   license "MIT"
 
-  depends_on "baresip"
+  depends_on "spandsp"
+  depends_on "opus"
 
   on_macos do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.10.1/ringo-flow-aarch64-apple-darwin"
-      sha256 "d378f4a7fc4103e0e43293499f760364e625f2397d9e8d60eba94b1392470b4c"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.11.0/ringo-flow-0.11.0-aarch64-apple-darwin.tar.gz"
+      sha256 "274056feedf1aee31c662b388e3d63d7576ea8ba49c87f520f05b5934a7d5723"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.10.1/ringo-flow-x86_64-apple-darwin"
-      sha256 "b518872f2cf68e6dae90d50ba6dc46ed6ac065fb97df976399b24ccf4ab7671a"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.11.0/ringo-flow-0.11.0-x86_64-apple-darwin.tar.gz"
+      sha256 "95e8ea9aafe5ff1f310605d36c5ef4876ed57daefe6cdaf3f1b47693f0b052cf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.10.1/ringo-flow-aarch64-unknown-linux-gnu"
-      sha256 "3a31860e83a2ecd3c29b52af126f0732f3ae2360ad5626693418a7388471e8f8"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.11.0/ringo-flow-0.11.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f29c0fadadb66bd04d7ff2c7780dcb0464c1d1ca34d9deb27569a083849ca3af"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.10.1/ringo-flow-x86_64-unknown-linux-gnu"
-      sha256 "0af675726c98533bace13cfc2532d3c8beea1286d0c908d039679fa9656e3663"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.11.0/ringo-flow-0.11.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "bc5ddcf87f77484a04ec9629f3717d5b8221c8c7074c68f143b338fd695c1d67"
     end
   end
 
   def install
-    bin.install Dir["ringo-flow-*"].first => "ringo-flow"
+    bin.install "ringo-flow"
   end
 
   test do
