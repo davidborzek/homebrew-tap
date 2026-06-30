@@ -1,7 +1,7 @@
 class Ringo < Formula
   desc "A terminal SIP softphone built on baresip"
   homepage "https://github.com/davidborzek/ringo"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   depends_on "spandsp"
@@ -9,23 +9,23 @@ class Ringo < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.0/ringo-0.11.0-aarch64-apple-darwin.tar.gz"
-      sha256 "abd039a2f3777a0337c47698e0966746382bd0b85671895c72e2bf9fac280d3d"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.1/ringo-0.11.1-aarch64-apple-darwin.tar.gz"
+      sha256 "d819317b0ce28732b3a722fbb2856dc820212d669a3246a6d736355cd8f1ae17"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.0/ringo-0.11.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e4fafc5115fdd51a39ca06861392c3df52b172e994e52c41dcb73f77e7143ce2"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.1/ringo-0.11.1-x86_64-apple-darwin.tar.gz"
+      sha256 "864e830efe5b1d3f73667764caa460b7927ee8911a944863e494b226ac6ae78c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.0/ringo-0.11.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b7bd859dcca38dded32993ef4086a4069560f59dc35f53194cd89e118d04eb46"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.1/ringo-0.11.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8c3c42e40d003d5bb15e1831a972205f910b494357ef0caf94af86fdec5059f5"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.0/ringo-0.11.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a5749848efd0dbadccca09f93c0ff00bb96c3dfaf10550f37f6e560aab539be0"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.11.1/ringo-0.11.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0dafd20d4227540a9ac11a784c509520d85ea3b1a0205740789e2174fa992d9a"
     end
   end
 
