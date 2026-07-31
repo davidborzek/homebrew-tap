@@ -1,7 +1,7 @@
 class RingoFlow < Formula
   desc "Declarative telephony scenario test runner for baresip"
   homepage "https://github.com/davidborzek/ringo"
-  version "0.12.2"
+  version "0.13.0"
   license "MIT"
 
   depends_on "spandsp"
@@ -9,23 +9,23 @@ class RingoFlow < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.12.2/ringo-flow-0.12.2-aarch64-apple-darwin.tar.gz"
-      sha256 "690e0271873ffb33481a42b6739cb62fe50a5d2b52ae72ad5fb7b14aa9b8ff7d"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.13.0/ringo-flow-0.13.0-aarch64-apple-darwin.tar.gz"
+      sha256 "30b5d4125dea92ff75d288ab29d044f42ec971d6fc46008f1ee9a07e712d20c6"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.12.2/ringo-flow-0.12.2-x86_64-apple-darwin.tar.gz"
-      sha256 "b19ee5ed1ffb2fbf7da4ad4f183d4c01cb7b7c57783e3939359c95b690135c60"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.13.0/ringo-flow-0.13.0-x86_64-apple-darwin.tar.gz"
+      sha256 "23be6f1d3eaa36f931b06eba71ceec31c29232efd12d37c7bdcb62b1a610444d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.12.2/ringo-flow-0.12.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "63c0f49fc646ca70ac141ffd3b2a1f5dafd5e1ca30be52d02688ef6772a132ea"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.13.0/ringo-flow-0.13.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "963dffe8b082a095594eb8ce43823fd17421f67e0214cdaba6be3aa764bce2e5"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.12.2/ringo-flow-0.12.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f37d7a4ea999fb2cf03bbca3a37a5683fdcb4ff7e8488165b7e83743cc2ffbc2"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-flow-v0.13.0/ringo-flow-0.13.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0103dd599a5e6059fdc10b2f872a738eb3e4c9e71c2a648bd6fb482e4f3510ed"
     end
   end
 
