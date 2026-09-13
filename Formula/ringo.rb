@@ -1,7 +1,7 @@
 class Ringo < Formula
   desc "A terminal SIP softphone built on baresip"
   homepage "https://github.com/davidborzek/ringo"
-  version "0.16.0"
+  version "0.16.1"
   license "MIT"
 
   depends_on "spandsp"
@@ -9,23 +9,23 @@ class Ringo < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.0/ringo-0.16.0-aarch64-apple-darwin.tar.gz"
-      sha256 "35bd46c87710730d151e76bb02e1a1d8012673c485629089734920aba1200b55"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.1/ringo-0.16.1-aarch64-apple-darwin.tar.gz"
+      sha256 "75af4a73a4c063ac5c32a866d497bd79fefafe93aafc613118de131a163ec9aa"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.0/ringo-0.16.0-x86_64-apple-darwin.tar.gz"
-      sha256 "718625b40753ff890ffe6a43ad0080b4f47a0077311f20984526e9b251d08440"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.1/ringo-0.16.1-x86_64-apple-darwin.tar.gz"
+      sha256 "f684afad55fb372bd1e3adde72cdd59be48eb3c3d5112d68ba7063fbd6e4c9e2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.0/ringo-0.16.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d646566d3a92d282d3c157cad536c4848f8b147f68049ea7545242c4e8ad3da8"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.1/ringo-0.16.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cfa88874acc75d6ce8b10e60f25fca5417dff8dab09f9c0d3c7c935f82cf62d7"
     end
     on_intel do
-      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.0/ringo-0.16.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b8d99144b22e446e246256bc0f3a44b4f6c3d27f724c68996e04b40f29910152"
+      url "https://github.com/davidborzek/ringo/releases/download/ringo-phone-v0.16.1/ringo-0.16.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c1e9b932131a36a1f4d357f2b606055647b091ff3126ab6cb8f12ad2cb305d88"
     end
   end
 
